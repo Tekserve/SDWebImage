@@ -538,7 +538,7 @@
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = SDWebImageARC;
+				PRODUCT_NAME = SDWebImage;
 				SKIP_INSTALL = YES;
 			};
 			name = TrainingDebug;
@@ -613,7 +613,7 @@
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = SDWebImageARC;
+				PRODUCT_NAME = SDWebImage;
 				SKIP_INSTALL = YES;
 			};
 			name = TrainingRelease;
