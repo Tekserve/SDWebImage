@@ -16,3 +16,5 @@
 + (UIImage *)decodedImageWithImage:(UIImage *)image;
 
 @end
+
+extern UIImage * decodedImage(UIImage * image);
