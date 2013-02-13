@@ -175,7 +175,7 @@ static const NSInteger kDefaultCacheMaxCacheAge = 60 * 60 * 24 * 7; // 1 week
 
     dispatch_async(self.ioQueue, ^
     {
-        UIImage *diskImage = decodedImage(SDScaledImageForPath(key, [NSData dataWithContentsOfFile:[self cachePathForKey:key]]));
+        UIImage *diskImage = SDDecodeImage(SDScaledImageForPath(key, [NSData dataWithContentsOfFile:[self cachePathForKey:key]]));
 
         if (diskImage)
         {

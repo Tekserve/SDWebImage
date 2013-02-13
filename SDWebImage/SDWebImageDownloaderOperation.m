@@ -239,7 +239,7 @@
 
                 if (partialImageRef)
                 {
-                    UIImage *image = decodedImage(SDScaledImageForPath(self.request.URL.absoluteString, [UIImage imageWithCGImage:partialImageRef]));
+                    UIImage *image = SDDecodeImage(SDScaledImageForPath(self.request.URL.absoluteString, [UIImage imageWithCGImage:partialImageRef]));
                     CGImageRelease(partialImageRef);
                     dispatch_async(dispatch_get_main_queue(), ^
                     {
@@ -275,7 +275,7 @@
     {
         dispatch_async(self.queue, ^
         {
-            UIImage *image = decodedImage(SDScaledImageForPath(self.request.URL.absoluteString, self.imageData));
+            UIImage *image = SDDecodeImage(SDScaledImageForPath(self.request.URL.absoluteString, self.imageData));
             dispatch_async(dispatch_get_main_queue(), ^
             {
                 if (CGSizeEqualToSize(image.size, CGSizeZero))
