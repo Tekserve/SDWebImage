@@ -11,4 +11,8 @@
 #import <Foundation/Foundation.h>
 #import "SDWebImageCompat.h"
 
-extern UIImage * SDDecodeImage(UIImage * image);
+@interface UIImage (ForceDecode)
+
++ (UIImage *)decodedImageWithImage:(UIImage *)image;
+
+@end
